@@ -38,10 +38,6 @@ public class Enemy : Character
 	bool checkBeliefForState = false;
 	Object beliefTargetState; //mudar para o objeto de estado a ser utilizado no futuro
 
-	//action queue for the enemy
-	Queue<Action> actionQueue;
-
-
 	Vector3[] routine = {new Vector3(1.81f, -3.31667f, -6.76f), new Vector3(13.18f, 3.310567f, -17.96225f), new Vector3(-21.21f, 0f, 16.62f), new Vector3(-7.13f, -2.96f, -7.2f), 
 		new Vector3(1.81f, -3.31667f, -6.76f), new Vector3(13.18f, 3.310567f, -17.96225f), new Vector3(-21.21f, 0f, 16.62f), new Vector3(-7.13f, -2.96f, -7.2f), 
 		new Vector3(1.81f, -3.31667f, -6.76f), new Vector3(13.18f, 3.310567f, -17.96225f), new Vector3(-21.21f, 0f, 16.62f), new Vector3(-7.13f, -2.96f, -7.2f), 
@@ -51,7 +47,11 @@ public class Enemy : Character
 
 	EmotionManager emotionManager;
 
+	//Enemy inventory
+	Inventory inventory;
 
+	//action queue for the enemy
+	List<ActionChain> actionlist;
 
 
 
@@ -66,12 +66,12 @@ public class Enemy : Character
 		positionBeliefSet = new Dictionary<string, PositionBelief>();
 		stateBeliefSet = new Dictionary<string, StateBelief>();
 
-		//BEGIN TESTE
-		Item radio = new Item("1", "radio");
-		PositionBelief radiopos = new PositionBelief(radio.itemId, new Vector3(-9.51f,2.64f,-6.112f));
 
-		positionBeliefSet.Add(radio.itemId, radiopos);
-		//END TESTE
+		//Item radio = new Item("1", "radio");
+		//PositionBelief radiopos = new PositionBelief(radio.itemId, new Vector3(-9.51f,2.64f,-6.112f));
+
+		//positionBeliefSet.Add(radio.itemId, radiopos);
+
 
 		//beginMovement = true;
 		navAgent = GetComponent<NavMeshAgent>();
@@ -81,6 +81,12 @@ public class Enemy : Character
 		InGameTime.getInstance(); //para nao precisar fazer isso, criar uma prefab invisivel no mapa para sempre carregar o singleton de tempo nela
 		
 		emotionManager = new EmotionManager();
+
+		inventory = new Inventory();
+
+		TestInventory();
+
+		TestMaxHeap();
 	
 	}
 
@@ -136,7 +142,7 @@ public class Enemy : Character
 
 
 		//obeyRoutine();
-		obeyEmotions();
+		//obeyEmotions(); temporariamente removido para o teste de itens
 		if(moving != false)
 			if(destination == transform.position)
 			{
@@ -149,7 +155,8 @@ public class Enemy : Character
 		emotionManager.updateEmotion();
 	}
 
-	void Teste()
+	//Test method to check if minheap works
+	void TestMinHeap()
 	{
 		MinHeap<int> heap = new MinHeap<int>();
 		heap.insert(0);
@@ -171,8 +178,58 @@ public class Enemy : Character
 		}
 	}
 
-	//COMENTADO POIS EH O PATHFINDING ANTIGO
-	/*void move()
+	//Test method to check if maxheap works
+	void TestMaxHeap()
+	{
+		MaxHeap<int> heap = new MaxHeap<int>();
+		heap.insert(0);
+		heap.insert(2);
+		heap.insert(3);
+		heap.insert(4);
+		heap.insert(5);
+		heap.insert(-1);
+
+		heap.print();
+		Debug.Log(";llol");
+
+		for(int i = 0; i < 6; i++)
+		{
+			heap.pop();
+
+			heap.print();
+			Debug.Log(";llol");
+		}
+	}
+
+	//TEST METHOD TO PICKUP AN ITEM BASED ON BELIEF SYSTEM
+	//ta funcionando
+	void TestInventory()
+	{
+		Item dummyItem = new Item("1", "dummy");
+		positionBeliefSet.Add(dummyItem.itemId, new PositionBelief(dummyItem.itemId, new Vector3(17.87f, 3.509f, -9.75f)));
+
+		PositionBelief belief = positionBeliefSet[dummyItem.itemId];
+		navAgent.SetDestination(belief.position);
+	}
+
+
+
+
+
+	float distance(Vector3 a, Vector3 b)
+	{
+		return Mathf.Sqrt( Mathf.Pow(a.x - b.x, 2) + Mathf.Pow(a.y - b.y, 2) + Mathf.Pow(a.z - b.z, 2));
+	}
+
+	bool v3Comparison(Vector3 a, Vector3 b)
+	{
+		return Vector3.SqrMagnitude(a - b) < 1f;
+	}
+}
+
+
+//COMENTADO POIS EH O PATHFINDING ANTIGO
+/*void move()
 	{
 		if(currWaypoint == transform.position)
 		{
@@ -340,14 +397,3 @@ public class Enemy : Character
 		//return null;
 
 	}*/
-
-	float distance(Vector3 a, Vector3 b)
-	{
-		return Mathf.Sqrt( Mathf.Pow(a.x - b.x, 2) + Mathf.Pow(a.y - b.y, 2) + Mathf.Pow(a.z - b.z, 2));
-	}
-
-	bool v3Comparison(Vector3 a, Vector3 b)
-	{
-		return Vector3.SqrMagnitude(a - b) < 1f;
-	}
-}
