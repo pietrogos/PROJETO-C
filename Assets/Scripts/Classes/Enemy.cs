@@ -84,9 +84,9 @@ public class Enemy : Character
 
 		inventory = new Inventory();
 
-		TestInventory();
+		//TestInventory();
 
-		TestMaxHeap();
+		//TestMaxHeap();
 	
 	}
 

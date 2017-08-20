@@ -15,7 +15,7 @@ public class MaxHeap<T> where T : IComparable<T> {
 	{
 		T value = elements[index];
 
-		while (value.CompareTo(elements[fatherIndex(index)]) > 0) 
+		while (value.CompareTo(elements[fatherIndex(index)]) > 0)
 		{
 			T aux = elements [fatherIndex (index)];
 			elements [fatherIndex (index)] = value;
@@ -35,9 +35,9 @@ public class MaxHeap<T> where T : IComparable<T> {
 		T value = elements[0];
 		int index = 0;
 
-		while (true) 
+		while (true)
 		{
-			if(leftSonIndex(index) < elements.Count && value.CompareTo(elements[leftSonIndex(index)]) <= 0) 
+			if(leftSonIndex(index) < elements.Count && value.CompareTo(elements[leftSonIndex(index)]) <= 0)
 			{
 				if(rightSonIndex(index) < elements.Count && elements[rightSonIndex(index)].CompareTo(elements[leftSonIndex(index)]) > 0)
 				{
