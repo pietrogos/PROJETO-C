@@ -27,7 +27,7 @@ public class Enemy : Character
 	//private Stack<Vector3> moves = new Stack<Vector3>();
 
 	//enemy navigation
-	NavMeshAgent navAgent;
+	UnityEngine.AI.NavMeshAgent navAgent;
 
 	//enemy belief system
 	Dictionary<string, PositionBelief> positionBeliefSet; //dictionary with all position beliefs. key is the itemID, value is the positionBelief
@@ -74,7 +74,7 @@ public class Enemy : Character
 
 
 		//beginMovement = true;
-		navAgent = GetComponent<NavMeshAgent>();
+		navAgent = GetComponent<UnityEngine.AI.NavMeshAgent>();
 
 		navAgent.SetDestination(routine[0]);
 
