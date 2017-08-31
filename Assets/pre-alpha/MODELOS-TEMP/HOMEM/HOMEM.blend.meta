@@ -1,0 +1,485 @@
+fileFormatVersion: 2
+guid: 6af66671d7fe3164e8cf58cd412b5e2e
+timeCreated: 1503625754
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: ANTEBRACO_IK_L_001
+    100002: ANTEBRACO_IK_R_001
+    100004: ANTEBRACO_L
+    100006: ANTEBRACO_R
+    100008: Armature
+    100010: base
+    100012: braco_IK_L_002
+    100014: braco_IK_R_002
+    100016: braco_L
+    100018: braco_R
+    100020: ESPINHA
+    100022: Head
+    100024: //RootNode
+    100026: JOELHO_L
+    100028: JOELHO_R
+    100030: MAO_L
+    100032: MAO_R
+    100034: OMBRO_L
+    100036: OMBRO_R
+    100038: PE1_L
+    100040: PE1_R
+    100042: PE2_L
+    100044: PE2_R
+    100046: PEITO
+    100048: PERNA1_L
+    100050: PERNA1_R
+    100052: PERNA2_IK_L_001
+    100054: PERNA2_IK_R_001
+    100056: PERNA2_L
+    100058: PERNA2_R
+    100060: PESCOCO
+    100062: PESCOCO_IK_001
+    100064: Plane
+    100066: QUADRIL
+    400000: ANTEBRACO_IK_L_001
+    400002: ANTEBRACO_IK_R_001
+    400004: ANTEBRACO_L
+    400006: ANTEBRACO_R
+    400008: Armature
+    400010: base
+    400012: braco_IK_L_002
+    400014: braco_IK_R_002
+    400016: braco_L
+    400018: braco_R
+    400020: ESPINHA
+    400022: Head
+    400024: //RootNode
+    400026: JOELHO_L
+    400028: JOELHO_R
+    400030: MAO_L
+    400032: MAO_R
+    400034: OMBRO_L
+    400036: OMBRO_R
+    400038: PE1_L
+    400040: PE1_R
+    400042: PE2_L
+    400044: PE2_R
+    400046: PEITO
+    400048: PERNA1_L
+    400050: PERNA1_R
+    400052: PERNA2_IK_L_001
+    400054: PERNA2_IK_R_001
+    400056: PERNA2_L
+    400058: PERNA2_R
+    400060: PESCOCO
+    400062: PESCOCO_IK_001
+    400064: Plane
+    400066: QUADRIL
+    4300000: Plane
+    7400000: Default Take
+    7400002: ArmatureAction
+    7400004: PoseLib
+    9500000: //RootNode
+    13700000: Plane
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'Default Take' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'QUADRIL' has translation animation that
+      will be discarded.\n\t'base' has translation animation that will be discarded.\n\nClip
+      'ArmatureAction' has import animation warnings that might lower retargeting
+      quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'QUADRIL'
+      has translation animation that will be discarded.\n\t'base' has translation
+      animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: Armature
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PERNA1_L
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PERNA1_R
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PERNA2_L
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PERNA2_R
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PE2_L
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PE2_R
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ESPINHA
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PEITO
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: OMBRO_L
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: OMBRO_R
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: braco_L
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: braco_R
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ANTEBRACO_L
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ANTEBRACO_R
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MAO_L
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: MAO_R
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PESCOCO
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: HOMEM(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Armature
+      parentName: HOMEM(Clone)
+      position: {x: -0.000000007064254, y: 6.6481752, z: 0.95205295}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ANTEBRACO_IK_L_001
+      parentName: Armature
+      position: {x: -1.6879826, y: 0.076482505, z: -0.12636238}
+      rotation: {x: 0, y: -0, z: -0.7071067, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ANTEBRACO_IK_R_001
+      parentName: Armature
+      position: {x: 1.833565, y: 0.35559472, z: -0.1727665}
+      rotation: {x: 0, y: -0, z: -0.7071067, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: base
+      parentName: Armature
+      position: {x: 0.000000005695555, y: 0.115914784, z: 2.0308614}
+      rotation: {x: 0, y: -0, z: -0.7071067, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ESPINHA
+      parentName: base
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.00000014014486, y: 0.6300224, z: -0.0000000750956, w: 0.77657694}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: PEITO
+      parentName: ESPINHA
+      position: {x: -1.1644378, y: 0.000000087912625, z: -0.00000011920929}
+      rotation: {x: 0.99001324, y: -0.00000007306032, z: -0.14097469, w: 0.00000024790683}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PESCOCO
+      parentName: PEITO
+      position: {x: -1.2595927, y: 0.00000009509661, z: -0.000000059604645}
+      rotation: {x: -0.00000009343705, y: -0.10820212, z: -0.000000050066546, w: 0.99412894}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: Head
+      parentName: PESCOCO
+      position: {x: -0.6445165, y: 0.000000048659686, z: -0.000000111758716}
+      rotation: {x: 0.98861027, y: -0.00000005001962, z: -0.15049867, w: -0.0000003933866}
+      scale: {x: 0.9999995, y: 1, z: 0.9999999}
+    - name: OMBRO_L
+      parentName: PESCOCO
+      position: {x: 0.40684476, y: 0.69323766, z: -0.25177398}
+      rotation: {x: -0.018930655, y: -0.07474278, z: -0.74816805, w: 0.6590142}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: braco_L
+      parentName: OMBRO_L
+      position: {x: -0.51883215, y: -0.00000074505806, z: 0.00000031292439}
+      rotation: {x: 0.5595874, y: 0.08603612, z: 0.006152101, w: 0.8242706}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1}
+    - name: ANTEBRACO_L
+      parentName: braco_L
+      position: {x: -2.1934671, y: 0.000000059604645, z: -0.000000037252903}
+      rotation: {x: 0.0027856522, y: 0.0010578034, z: 0.03213349, w: 0.9994792}
+      scale: {x: 1.0000001, y: 1, z: 1.0000002}
+    - name: MAO_L
+      parentName: ANTEBRACO_L
+      position: {x: -1.9693303, y: 0.000000048428774, z: -0.000000067055225}
+      rotation: {x: 0.0015670564, y: -0.13056202, z: 0.013427492, w: 0.99134797}
+      scale: {x: 0.9999998, y: 1, z: 1}
+    - name: OMBRO_R
+      parentName: PESCOCO
+      position: {x: 0.40684468, y: -0.6932374, z: -0.25177476}
+      rotation: {x: 0.6592304, y: 0.7444004, z: 0.10587735, w: 0.008566771}
+      scale: {x: 1.0000001, y: 1, z: 0.99999994}
+    - name: braco_R
+      parentName: OMBRO_R
+      position: {x: -0.5188319, y: -0.00000070780516, z: -0.00000028312206}
+      rotation: {x: 0.8524656, y: 0.0031872082, z: 0.085733235, w: 0.5156957}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: ANTEBRACO_R
+      parentName: braco_R
+      position: {x: -2.1934667, y: 0.0000004172325, z: -0.00000029802322}
+      rotation: {x: -0.001703232, y: 0.0038573104, z: -0.03727308, w: 0.99929625}
+      scale: {x: 0.9999999, y: 0.99999964, z: 1}
+    - name: MAO_R
+      parentName: ANTEBRACO_R
+      position: {x: -1.9693307, y: 0.00000007636845, z: 0.000000063329935}
+      rotation: {x: -0.0015671377, y: -0.13056181, z: -0.013427483, w: 0.991348}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: braco_IK_L_002
+      parentName: Armature
+      position: {x: -1.7873278, y: 1.6643835, z: 2.1634657}
+      rotation: {x: 0, y: -0, z: -0.7071067, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: braco_IK_R_002
+      parentName: Armature
+      position: {x: 1.6163172, y: 1.6643835, z: 2.1634657}
+      rotation: {x: 0, y: -0, z: -0.7071067, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PERNA2_IK_L_001
+      parentName: Armature
+      position: {x: -0.727491, y: -0.0054828585, z: -5.4046984}
+      rotation: {x: -0.40718323, y: -0.40718317, z: -0.578102, w: 0.578102}
+      scale: {x: 1, y: 1, z: 1}
+    - name: JOELHO_L
+      parentName: PERNA2_IK_L_001
+      position: {x: 2.5123749, y: -0.00000004403419, z: -1.1849867}
+      rotation: {x: 0.0000051073584, y: -0.8106845, z: 0.000007153712, w: 0.58548325}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: PERNA2_IK_R_001
+      parentName: Armature
+      position: {x: 0.727491, y: -0.013420703, z: -5.404741}
+      rotation: {x: -0.40757307, y: -0.407573, z: -0.57782716, w: 0.57782716}
+      scale: {x: 1, y: 1, z: 1}
+    - name: JOELHO_R
+      parentName: PERNA2_IK_R_001
+      position: {x: 2.5107868, y: -0.00000034195, z: -1.1859798}
+      rotation: {x: -0.000005229768, y: -0.8106845, z: -0.000007153711, w: 0.58548325}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: PESCOCO_IK_001
+      parentName: Armature
+      position: {x: 0.000000007395391, y: 0.07565889, z: 5.043534}
+      rotation: {x: 0, y: -0, z: -0.7071067, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: QUADRIL
+      parentName: Armature
+      position: {x: 0.000000001192093, y: 0.16756982, z: 0.23534036}
+      rotation: {x: 0.5071384, y: 0.50713813, z: -0.49275845, w: 0.49275824}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PERNA1_L
+      parentName: QUADRIL
+      position: {x: 0.06390568, y: -0.59354603, z: 0.3126641}
+      rotation: {x: -0.05614137, y: -0.65144634, z: 0.7565052, w: -0.012875002}
+      scale: {x: 0.9999998, y: 0.9999979, z: 0.99999267}
+    - name: PERNA2_L
+      parentName: PERNA1_L
+      position: {x: -2.4744618, y: 0.00000018626451, z: 0.000000011175871}
+      rotation: {x: -0.07526782, y: -0.032936044, z: -0.08545416, w: 0.99294895}
+      scale: {x: 0.99999994, y: 1.0000039, z: 0.9999951}
+    - name: PE1_L
+      parentName: PERNA2_L
+      position: {x: -3.119217, y: 0.00000029918738, z: -0.000000009811629}
+      rotation: {x: 0.648219, y: 0.28265262, z: 0.2837166, w: 0.64763}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PE2_L
+      parentName: PE1_L
+      position: {x: -0.61330837, y: 0.000000047613867, z: -0.00000036892015}
+      rotation: {x: -0.00000492339, y: 0.3767965, z: -0.00000075589674, w: 0.92629606}
+      scale: {x: 0.9999999, y: 1.0000001, z: 1}
+    - name: PERNA1_R
+      parentName: QUADRIL
+      position: {x: 0.06390565, y: 0.59354615, z: 0.3126635}
+      rotation: {x: -0.021347564, y: -0.6317921, z: 0.7729073, w: -0.054748}
+      scale: {x: 0.9999999, y: 1.0000019, z: 1.0000069}
+    - name: PERNA2_R
+      parentName: PERNA1_R
+      position: {x: -2.474462, y: 0.00000014901161, z: -0.000000067055225}
+      rotation: {x: -0.07988877, y: 0.019569037, z: -0.08977034, w: 0.9925604}
+      scale: {x: 1, y: 1.0000042, z: 0.9999953}
+    - name: PE1_R
+      parentName: PERNA2_R
+      position: {x: -3.1192155, y: 0.00000027008355, z: 0.00000003480818}
+      rotation: {x: 0.64851594, y: 0.2833321, z: 0.28303617, w: 0.6473334}
+      scale: {x: 1, y: 0.9999998, z: 0.99999994}
+    - name: PE2_R
+      parentName: PE1_R
+      position: {x: -0.6133078, y: 0.00000008242205, z: -0.0000004246831}
+      rotation: {x: -0.000003147703, y: 0.37679678, z: -0.000000044773365, w: 0.92629594}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: Plane
+      parentName: HOMEM(Clone)
+      position: {x: 0.000000007064254, y: -0.05347684, z: 0.34819266}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.1678475, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
